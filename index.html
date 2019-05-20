@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scisors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="select">
+        <h3>Pick Your option:</h3>
+        <i data-option="paper" class="far fa-hand-paper fa-7x"></i>
+        <i data-option="rock" class="far fa-hand-rock fa-7x"></i>
+        <i data-option="scissors" class="far fa-hand-scissors fa-7x"></i>
+
+    </div>
+
+    <button class="start">Let's Play!</button>
+    <div class="panel-left">
+        <h3>Summary:</h3>
+        <p>Your Choice: <span data-summary="your-choice"></span></p>
+        <p>Computer Choice: <span data-summary="computer-choice"></span></p>
+        <h2>Winner: <span data-summary="who-won"></span></h2>
+
+    </div>
+    <div class="panel-right">
+        <h3>Current points</h3>
+        <p class="numbers">Number of plays: <span>0</span></p>
+        <p class="wins">How many times You won: <span>0</span></p>
+        <p class="loses">How many times You lose: <span>0</span></p>
+        <p class="draws">Number of draws: <span>0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
